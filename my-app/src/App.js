@@ -7,7 +7,7 @@ import "./App.css";
 
 let correctGuesses = 0;
 let bestScore = 0;
-let clickMessage = "Click on a movie poster to gain points! Click on the same one twice and you lose!";
+let clickMessage = "Click on a movie or tv show to gain points! Click on the same one twice and you lose!";
 
 class App extends Component {
     
