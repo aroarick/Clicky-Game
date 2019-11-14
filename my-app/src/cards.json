@@ -1,0 +1,61 @@
+[{
+    "id": 1,
+    "image": "./assets/images/aTeam.jpg",
+    "clicked": false
+},
+{
+    "id": 1,
+    "image": "./assets/images/charliesAngels.jpg",
+    "clicked": false
+},
+{
+    "id": 1,
+    "image": "./assets/images/footloose.jpg",
+    "clicked": false
+},
+{
+    "id": 1,
+    "image": "./assets/images/fridayThe13th.jpg",
+    "clicked": false
+},
+{
+    "id": 1,
+    "image": "./assets/images/ghostbusters.jpg",
+    "clicked": false
+},
+{
+    "id": 1,
+    "image": "./assets/images/highlander.jpg",
+    "clicked": false
+},
+{
+    "id": 1,
+    "image": "./assets/images/knightRider.jpg",
+    "clicked": false
+},
+{
+    "id": 1,
+    "image": "./assets/images/macgyver.jpg",
+    "clicked": false
+},
+{
+    "id": 1,
+    "image": "./assets/images/realGenius.jpg",
+    "clicked": false
+},
+{
+    "id": 1,
+    "image": "./assets/images/starWars.jpg",
+    "clicked": false
+},
+{
+    "id": 1,
+    "image": "./assets/images/theLandBeforeTime.jpg",
+    "clicked": false
+},
+{
+    "id": 1,
+    "image": "./assets/images/topGun.jpg",
+    "clicked": false
+}
+]
