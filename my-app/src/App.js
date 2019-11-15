@@ -3,6 +3,7 @@ import Card from "./extra/card/card";
 import Wrapper from "./extra/wrapper/wrapper";
 import Title from "./extra/topNavThing/topNavThing";
 import cards from "./cards.json";
+import shuffle from "shuffle-array";
 import "./App.css";
 
 let correctGuesses = 0;
@@ -45,14 +46,14 @@ class App extends Component {
 
       clickMessage = "Keep going!";
 
+      shuffle(this.state.cards);
+
+      console.log(cards);
+
       if (correctGuesses > bestScore) {
         bestScore = correctGuesses;
         this.setState({ bestScore });
       }
-
-      cards.sort(function(a, b) {
-        return 0.5 - Math.random();
-      });
 
       //   this.setState({ cards });
       this.setState({ correctGuesses });
@@ -70,9 +71,7 @@ class App extends Component {
         cards[i].clicked = false;
       }
 
-      cards.sort(function(a, b) {
-        return Math.random();
-      });
+      //   cards = [1, 2, 3, 4, 5];
 
       //   this.setState({ cards });
       this.setState({ correctGuesses });
