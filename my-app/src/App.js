@@ -7,108 +7,106 @@ import "./App.css";
 
 let correctGuesses = 0;
 let bestScore = 0;
-let clickMessage = "Click on a movie or tv show to gain points! Click on the same one twice and you lose!";
+let clickMessage =
+  "Click on a movie to gain points! Click on the same one twice and you lose!";
 
 class App extends Component {
-    
-    state = {
-        cards,
-        correctGuesses,
-        bestScore,
-        clickMessage
-    };
+  state = {
+    cards,
+    correctGuesses,
+    bestScore,
+    clickMessage
+  };
 
-    setClicked = id => {
-        const cards = this.state.cards;
-        const clickedMatch = cards.filter(match => match.id === id);
+  setClicked = id => {
+    // const cards = this.state.cards;
+    const cards = this.state.cards.filter(match => match.id === id);
+    // this.setState({ cards });
+    console.log(cards);
 
-        if (clickedMatch[0].clicked){
+    if (cards[0].clicked) {
+      console.log("Correct Guesses: " + correctGuesses);
+      console.log("Best Score: " + bestScore);
 
-            console.log ("Correct Guesses: " + correctGuesses);
-            console.log ("Best Score: " + bestScore);
+      correctGuesses = 0;
+      clickMessage = "You already clicked on this one.";
 
-            correctGuesses = 0;
-            clickMessage = "You already clicked on this one."
+      for (let i = 0; i < cards.length; i++) {
+        cards[i].clicked = false;
+      }
 
-            for (let i = 0 ; i < cards.length ; i++){
-                cards[i].clicked = false;
-            }
+      this.setState({ clickMessage });
+      this.setState({ correctGuesses });
+      //   this.setState({ cards });
+    } else if (correctGuesses < 11) {
+      cards[0].clicked = true;
 
-            this.setState({clickMessage});
-            this.setState({ correctGuesses });
-            this.setState({cards});
+      correctGuesses++;
 
-        } else if (correctGuesses < 11) {
+      clickMessage = "Keep going!";
 
-            clickedMatch[0].clicked = true;
+      if (correctGuesses > bestScore) {
+        bestScore = correctGuesses;
+        this.setState({ bestScore });
+      }
 
-            correctGuesses++;
-            
-            clickMessage = "You haven't click on that one yet! Keep going!";
+      cards.sort(function(a, b) {
+        return 0.5 - Math.random();
+      });
 
-            if (correctGuesses > bestScore){
-                bestScore = correctGuesses;
-                this.setState({ bestScore });
-            }
+      //   this.setState({ cards });
+      this.setState({ correctGuesses });
+      this.setState({ clickMessage });
+    } else {
+      cards[0].clicked = true;
 
-            cards.sort(function(a, b){return 0.5 - Math.random()});
+      correctGuesses = 0;
 
-            this.setState({ cards });
-            this.setState({correctGuesses});
-            this.setState({clickMessage});
-        } else {
+      clickMessage = "Now, let's see if you can do it again!";
+      bestScore = 12;
+      this.setState({ bestScore });
 
-            clickedMatch[0].clicked = true;
+      for (let i = 0; i < cards.length; i++) {
+        cards[i].clicked = false;
+      }
 
-            correctGuesses = 0;
+      cards.sort(function(a, b) {
+        return Math.random();
+      });
 
-            clickMessage = "WOW!!! You got ALL of them!!! Now, let's see if you can do it again!";
-            bestScore = 12;
-            this.setState({ bestScore });
-            
-            for (let i = 0 ; i < cards.length ; i++){
-                cards[i].clicked = false;
-            }
-
-            cards.sort(function(a, b){return 0.5 - Math.random()});
-
-            this.setState({ cards });
-            this.setState({correctGuesses});
-            this.setState({clickMessage});
-
-        }
-    };
-
-    render() {
-        return (
-            <Wrapper>
-                <Title>Favourite 80s Guessing Game</Title>
-        
-                <h3 className="scoreSummary">
-                    {this.state.clickMessage}
-                </h3>
-                
-                <h3 className="scoreSummary card-header">
-                    Correct Guesses: {this.state.correctGuesses} 
-                    <br />
-                    Best Score: {this.state.bestScore} 
-                </h3>
-                <div className="container">
-                <div className="row">
-                {this.state.cards.map(match => (
-                    <Card
-                        setClicked={this.setClicked}
-                        id={cards.id}
-                        key={match.id}
-                        image={match.image}
-                    />
-                ))}
-                </div>
-                </div>
-
-            </Wrapper>
-        );
+      //   this.setState({ cards });
+      this.setState({ correctGuesses });
+      this.setState({ clickMessage });
     }
+  };
+
+  render() {
+    return (
+      <Wrapper>
+        <Title>Favourite 80s Guessing Game</Title>
+
+        <h3 className="scoreSummary">{this.state.clickMessage}</h3>
+
+        <h3 className="scoreSummary card-header">
+          Correct Guesses: {this.state.correctGuesses}
+          <br />
+          Best Score: {this.state.bestScore}
+        </h3>
+        <div className="container">
+          <div className="row">
+            {this.state.cards.map(match => (
+              <Card
+                setClicked={this.setClicked}
+                id={match.id}
+                key={match.id}
+                image={match.image}
+              />
+            ))}
+          </div>
+        </div>
+      </Wrapper>
+    );
+  }
 }
 
 export default App;
