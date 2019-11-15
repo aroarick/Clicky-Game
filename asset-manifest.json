@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/static/css/main.ece36e50.chunk.css",
-    "main.js": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/static/js/main.91713ca5.chunk.js",
-    "main.js.map": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/static/js/main.91713ca5.chunk.js.map",
-    "runtime-main.js": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/static/js/runtime-main.bf7dc011.js",
-    "runtime-main.js.map": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/static/js/runtime-main.bf7dc011.js.map",
-    "static/js/2.aa9a23fe.chunk.js": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/static/js/2.aa9a23fe.chunk.js",
-    "static/js/2.aa9a23fe.chunk.js.map": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/static/js/2.aa9a23fe.chunk.js.map",
-    "index.html": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/index.html",
-    "precache-manifest.d4dbd9258120255c006025148fc7c4d8.js": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/precache-manifest.d4dbd9258120255c006025148fc7c4d8.js",
-    "service-worker.js": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/service-worker.js",
-    "static/css/main.ece36e50.chunk.css.map": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/static/css/main.ece36e50.chunk.css.map"
+    "main.css": "/Clicky-Game/static/css/main.ece36e50.chunk.css",
+    "main.js": "/Clicky-Game/static/js/main.91713ca5.chunk.js",
+    "main.js.map": "/Clicky-Game/static/js/main.91713ca5.chunk.js.map",
+    "runtime-main.js": "/Clicky-Game/static/js/runtime-main.260fbe27.js",
+    "runtime-main.js.map": "/Clicky-Game/static/js/runtime-main.260fbe27.js.map",
+    "static/js/2.aa9a23fe.chunk.js": "/Clicky-Game/static/js/2.aa9a23fe.chunk.js",
+    "static/js/2.aa9a23fe.chunk.js.map": "/Clicky-Game/static/js/2.aa9a23fe.chunk.js.map",
+    "index.html": "/Clicky-Game/index.html",
+    "precache-manifest.d798b03087854b3c86c082557ef1c117.js": "/Clicky-Game/precache-manifest.d798b03087854b3c86c082557ef1c117.js",
+    "service-worker.js": "/Clicky-Game/service-worker.js",
+    "static/css/main.ece36e50.chunk.css.map": "/Clicky-Game/static/css/main.ece36e50.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.bf7dc011.js",
+    "static/js/runtime-main.260fbe27.js",
     "static/js/2.aa9a23fe.chunk.js",
     "static/css/main.ece36e50.chunk.css",
     "static/js/main.91713ca5.chunk.js"
