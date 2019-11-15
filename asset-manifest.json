@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/static/css/main.ece36e50.chunk.css",
+    "main.js": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/static/js/main.91713ca5.chunk.js",
+    "main.js.map": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/static/js/main.91713ca5.chunk.js.map",
+    "runtime-main.js": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/static/js/runtime-main.bf7dc011.js",
+    "runtime-main.js.map": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/static/js/runtime-main.bf7dc011.js.map",
+    "static/js/2.aa9a23fe.chunk.js": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/static/js/2.aa9a23fe.chunk.js",
+    "static/js/2.aa9a23fe.chunk.js.map": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/static/js/2.aa9a23fe.chunk.js.map",
+    "index.html": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/index.html",
+    "precache-manifest.d4dbd9258120255c006025148fc7c4d8.js": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/precache-manifest.d4dbd9258120255c006025148fc7c4d8.js",
+    "service-worker.js": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/service-worker.js",
+    "static/css/main.ece36e50.chunk.css.map": "%7Baroarick%7D.github.io/%7BClicky-Game%7D/static/css/main.ece36e50.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bf7dc011.js",
+    "static/js/2.aa9a23fe.chunk.js",
+    "static/css/main.ece36e50.chunk.css",
+    "static/js/main.91713ca5.chunk.js"
+  ]
+}
